@@ -6,20 +6,20 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Korbarlo - The agent who animates your ideas',
-  description: 'Transform your ideas into stunning designs with Korbarlo, your AI design partner.',
-  metadataBase: new URL('https://korbarlo.com'),
+  title: 'Kobarlo - Design to App in Seconds',
+  description: 'Watch as our AI transforms static designs into stunning animations. No coding required.',
+  metadataBase: new URL('https://kobarlo.com'),
   openGraph: {
-    title: 'Korbarlo - The agent who animates your ideas',
-    description: 'Transform your ideas into stunning designs with Korbarlo, your AI design partner.',
-    url: 'https://korbarlo.com',
-    siteName: 'Korbarlo',
+    title: 'Kobarlo - Design to App in Seconds',
+    description: 'Watch as our AI transforms static designs into stunning animations. No coding required.',
+    url: 'https://kobarlo.com',
+    siteName: 'Kobarlo',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Korbarlo - AI Design Partner',
+        alt: 'Kobarlo - AI Design Partner',
       },
     ],
     locale: 'en_US',
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Korbarlo - The agent who animates your ideas',
-    description: 'Transform your ideas into stunning designs with Korbarlo, your AI design partner.',
+    title: 'Kobarlo - Design to App in Seconds',
+    description: 'Watch as our AI transforms static designs into stunning animations. No coding required.',
     images: ['/og-image.png'],
   },
 }
@@ -40,7 +40,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <title>Kobarlo - Design to App in Seconds</title>
+        <meta name="description" content="Watch as our AI transforms static designs into stunning animations. No coding required." />
+        <link rel="icon" href="/favicon.ico" />
+      </head>
+      <body>
+        {children}
+      </body>
     </html>
   )
 } 
