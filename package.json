@@ -34,5 +34,14 @@
     "rollup": "^0.53.2",
     "rollup-plugin-buble": "^0.18.0",
     "uglify-js": "^3.3.4"
+  },
+  "dependencies": {
+    "@types/node": "^22.13.5",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "next": "^15.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.9"
   }
 }
