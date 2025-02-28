@@ -1,12 +1,6 @@
 'use client'
 import React from 'react'
-import { Metadata } from 'next'
 import Image from 'next/image'
-
-export const metadata: Metadata = {
-  title: 'Korbarlo - The agent who animates your ideas',
-  description: 'Transform your ideas into stunning designs with Korbarlo, your AI design partner.',
-}
 
 export default function Home() {
   return (
